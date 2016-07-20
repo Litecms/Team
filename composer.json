@@ -1,0 +1,21 @@
+{
+    "name": "lavalite/team",
+    "description": "Team package for lavalite.",
+    "keywords": ["lavalite", "Team"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Litecms",
+            "email": "info@lavalite.org"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Litecms\\Team\\": "src/Litecms/Team"
+        }
+    },
+    "minimum-stability": "dev"
+}
