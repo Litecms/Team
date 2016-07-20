@@ -2,9 +2,9 @@ This is a Laravel 5 package that provides team management facility for lavalite 
 
 ## Installation
 
-Begin by installing this package through Composer. Edit your project's `composer.json` file to require `lavalite/team`.
+Begin by installing this package through Composer. Edit your project's `composer.json` file to require `litecms/team`.
 
-    "lavalite/team": "dev-master"
+    "litecms/team": "dev-master"
 
 Next, update Composer from the Terminal:
 
@@ -40,8 +40,7 @@ Language
 
 Views public and admin
 
-    php artisan vendor:publish --provider="Litecms\Team\Providers\TeamServiceProvider" --tag="view-public"
-    php artisan vendor:publish --provider="Litecms\Team\Providers\TeamServiceProvider" --tag="view-admin"
+    php artisan vendor:publish --provider="Litecms\Team\Providers\TeamServiceProvider" --tag="view"
 
 Publish admin views only if it is necessary.
 
