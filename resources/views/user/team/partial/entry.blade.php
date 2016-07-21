@@ -1,4 +1,5 @@
-<div class='col-md-4 col-sm-6'>
+                {!! Form::hidden('upload_folder')!!}
+                <div class='col-md-4 col-sm-6'>
                        {!! Form::text('name')
                        -> label(trans('team::team.label.name'))
                        -> placeholder(trans('team::team.placeholder.name'))!!}

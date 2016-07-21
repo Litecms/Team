@@ -1,7 +1,7 @@
 {
     "name": "litecms/team",
     "description": "Team package for lavalite.",
-    "keywords": ["lavalite", "Team"],
+    "keywords": ["lavalite", "litecms", "Team"],
     "license": "MIT",
     "authors": [
         {

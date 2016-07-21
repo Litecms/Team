@@ -1,4 +1,4 @@
-This is a Laravel 5 package that provides team management facility for lavalite framework.
+This is a Litecms 5 package that provides team management facility for lavalite framework.
 
 ## Installation
 
@@ -34,13 +34,18 @@ Configuration
 
     php artisan vendor:publish --provider="Litecms\Team\Providers\TeamServiceProvider" --tag="config"
 
-Language
+Language files
 
     php artisan vendor:publish --provider="Litecms\Team\Providers\TeamServiceProvider" --tag="lang"
 
-Views public and admin
+Views files
 
-    php artisan vendor:publish --provider="Litecms\Team\Providers\TeamServiceProvider" --tag="view"
+    php artisan vendor:publish --provider="Litecms\Team\Providers\TeamServiceProvider" --tag="views"
+    
+Public folders
+
+    php artisan vendor:publish --provider="Litecms\Team\Providers\TeamServiceProvider" --tag="public"
+    
 
 Publish admin views only if it is necessary.
 

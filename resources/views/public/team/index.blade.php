@@ -26,7 +26,7 @@
                             </div>
                         </div>
                         <div class="team-image">
-                            <img src="{!!trans_url('image/lg')!!}/{!!$team['photo']['efolder']!!}/{!!$team['photo']['file']!!}" alt="">
+                            <img src="{!!url($team->defaultImage('lg','photo'))!!}" alt="">
                         </div>
                     </div>
                 @empty

@@ -27,7 +27,7 @@ return [
         'slugs'         => ['slug' => 'name'],
         'dates'         => ['deleted_at'],
         'appends'       => [],
-        'fillable'      => ['user_id', 'first_name', 'last_name', 'designation', 'photo', 'description', 'most_valuable_person', 'facebook', 'google_plus', 'instagram', 'tumblr', 'gmail', 'behance', 'twitter', 'status'],
+        'fillable'      => ['user_id', 'first_name', 'last_name', 'designation', 'photo', 'description', 'most_valuable_person', 'facebook', 'google_plus', 'instagram', 'tumblr', 'gmail', 'behance', 'twitter', 'status', 'upload_folder'],
         'translate'     => [],
 
         'upload-folder' => '/uploads/team/team',
