@@ -25,6 +25,12 @@
             <div class="tab-content">
                 <div class="tab-pane active" id="details">
                     @include('team::admin.team.partial.entry')
+                     <div class='col-md-4 col-sm-6'>
+                      <label>Photo</label>
+                      <div claa="row">
+                      <img src="{!!url(@$team->defaultImage('team.sm','photo'))!!}">
+                      </div>
+                    </div>
                 </div>
             </div>
         {!! Form::close() !!}

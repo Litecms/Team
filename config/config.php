@@ -16,6 +16,27 @@ return [
      * Modules.
      */
     'modules'  => ['team'],
+    /*
+     * Image size.
+     */
+    'image'    => [
+
+        'sm' => [
+            'width'     => '160',
+            'height'    => '200',
+            'action'    => 'resize',
+            'watermark' => 'img/logo/default.png',
+        ],
+
+        'lg' => [
+            'width'     => '800',
+            'height'    => '600',
+            'action'    => 'resize',
+            'default'   => 'img/noimage.jpg',
+            'watermark' => 'img/logo/default.png',
+        ],
+
+    ],
 
     'team'     => [
         'model'         => 'Litecms\Team\Models\Team',

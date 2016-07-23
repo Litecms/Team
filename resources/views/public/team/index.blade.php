@@ -26,12 +26,12 @@
                             </div>
                         </div>
                         <div class="team-image">
-                            <img src="{!!url($team->defaultImage('lg','photo'))!!}" alt="">
+                            <img src="{!!url($team->defaultImage('team.lg','photo'))!!}" class="img-responsive" alt="">
                         </div>
                     </div>
                 @empty
                 @endif
-                
+
             </div>
         </div>
     </div>

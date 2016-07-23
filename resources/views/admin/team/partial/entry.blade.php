@@ -65,11 +65,7 @@
        -> addClass('html-editor')
        -> placeholder(trans('team::team.placeholder.description'))!!}
 </div>
-<div class='col-md-4 col-sm-6'>
-       <label>Photo</label>
-      {!!Filer::uploader('photo',@$team->getUploadURL('photo'),1)!!}
-      {!!Filer::editor('photo', @$team['photo'],1) !!}
-</div>
+
 
 
 
