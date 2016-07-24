@@ -106,7 +106,7 @@ class TeamTableSeeder extends Seeder
                 'description' => null,
                 'icon'        => 'fa fa-users',
                 'target'      => null,
-                'order'       => 1,
+                'order'       => 230,
                 'status'      => 1,
             ],
 
@@ -118,7 +118,7 @@ class TeamTableSeeder extends Seeder
                 'description' => null,
                 'icon'        => null,
                 'target'      => null,
-                'order'       => 1,
+                'order'       => 230,
                 'status'      => 1,
             ],
 
