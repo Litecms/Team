@@ -28,7 +28,8 @@
                      <div class='col-md-4 col-sm-6'>
                       <label>Photo</label>
                       <div claa="row">
-                      <img src="{!!url(@$team->defaultImage('team.sm','photo'))!!}">
+                      {!!@$team->fileShow('photo')!!}
+
                       </div>
                     </div>
                 </div>

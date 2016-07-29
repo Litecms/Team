@@ -22,8 +22,7 @@
                 @include('team::admin.team.partial.entry')
                 <div class='col-md-4 col-sm-6'>
                       <label>Photo</label>
-                      {!!Filer::uploader('photo',@$team->getUploadURL('photo'),1)!!}
-                      {!!Filer::editor('photo', @$team['photo'],1) !!}
+                      {!!@$team->fileUpload('photo')!!}
                 </div>
             </div>
         </div>
