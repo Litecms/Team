@@ -97,6 +97,7 @@ class TeamAdminApiController extends BaseController
         try {
             $attributes            = $request->all();
             $attributes['user_id'] = user_id('admin.api');
+            $attributes['user_type'] = user_type();
             $team                  = $this->repository->create($attributes);
             $team                  = $team->presenter();
             $team['code']          = 2004;
