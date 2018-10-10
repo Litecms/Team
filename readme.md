@@ -8,31 +8,35 @@ Require this package with composer.
 
 Laravel 5.5 uses Package Auto-Discovery, so doesn't require you to manually add the ServiceProvider.
 
+## Migration and seeds
 
+    php artisan migrate
+    php artisan db:seed --class=Litecms\\TeamTableSeeder
+    
 ## Publishing
 
 **Configuration**
 
-    php artisan vendor:publish --provider="Litecms\team\Providers\TeamServiceProvider" --tag="config"
+    php artisan vendor:publish --provider="Litecms\Team\Providers\TeamServiceProvider" --tag="config"
 
 **Language**
 
-    php artisan vendor:publish --provider="Litecms\team\Providers\TeamServiceProvider" --tag="lang"
+    php artisan vendor:publish --provider="Litecms\Team\Providers\TeamServiceProvider" --tag="lang"
 
 **Files**
 
-    php artisan vendor:publish --provider="Litecms\team\Providers\TeamServiceProvider" --tag="storage"
+    php artisan vendor:publish --provider="Litecms\Team\Providers\TeamServiceProvider" --tag="storage"
 
 ### Views
 
 Publish views to resources\views\vendor directory
 
-    php artisan vendor:publish --provider="Litecms\team\Providers\TeamServiceProvider" --tag="view"
+    php artisan vendor:publish --provider="Litecms\Team\Providers\TeamServiceProvider" --tag="view"
 
 Publishes admin view to admin theme
 
-    php artisan theme:publish --provider="Litecms\team\Providers\TeamServiceProvider" --view="admin" --theme="admin"
+    php artisan theme:publish --provider="Litecms\Team\Providers\TeamServiceProvider" --view="admin" --theme="admin"
 
 Publishes public view to public theme
 
-    php artisan theme:publish --provider="Litecms\team\Providers\TeamServiceProvider" --view="public" --theme="public"
+    php artisan theme:publish --provider="Litecms\Team\Providers\TeamServiceProvider" --view="public" --theme="public"
