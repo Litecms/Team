@@ -1,0 +1,35 @@
+{
+    "name": "litecms/team",
+    "description": "Team package for litecms.",
+    "keywords": ["lavalite", "Team"],
+    "license": "MIT",
+    "type": "lavalite-package",
+    "authors": [
+        {
+            "name": "Lavalite",
+            "email": "info@lavalite.org"
+        }
+    ],
+    "require": {
+       "php": "^7.1.3"
+    },
+    "autoload": {
+        "classmap": [
+            "database/seeds"
+        ],
+        "psr-4": {
+            "Litecms\\Team\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Litecms\\Team\\Providers\\TeamServiceProvider"
+            ],
+            "aliases": {
+                "Team"       : "Litecms\\Team\\Facades\\Team"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
