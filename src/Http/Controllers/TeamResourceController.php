@@ -48,7 +48,7 @@ class TeamResourceController extends BaseController
 
         $teams = $this->repository->paginate();
 
-        return $this->response->title(trans('team::team.names'))
+        return $this->response->setMetaTitle(trans('team::team.names'))
             ->view('team::team.index', true)
             ->data(compact('teams'))
             ->output();
@@ -71,7 +71,7 @@ class TeamResourceController extends BaseController
             $view = 'team::team.new';
         }
 
-        return $this->response->title(trans('app.view') . ' ' . trans('team::team.name'))
+        return $this->response->setMetaTitle(trans('app.view') . ' ' . trans('team::team.name'))
             ->data(compact('team'))
             ->view($view, true)
             ->output();
@@ -88,7 +88,7 @@ class TeamResourceController extends BaseController
     {
 
         $team = $this->repository->newInstance([]);
-        return $this->response->title(trans('app.new') . ' ' . trans('team::team.name')) 
+        return $this->response->setMetaTitle(trans('app.new') . ' ' . trans('team::team.name')) 
             ->view('team::team.create', true) 
             ->data(compact('team'))
             ->output();
@@ -134,7 +134,7 @@ class TeamResourceController extends BaseController
      */
     public function edit(TeamRequest $request, Team $team)
     {
-        return $this->response->title(trans('app.edit') . ' ' . trans('team::team.name'))
+        return $this->response->setMetaTitle(trans('app.edit') . ' ' . trans('team::team.name'))
             ->view('team::team.edit', true)
             ->data(compact('team'))
             ->output();

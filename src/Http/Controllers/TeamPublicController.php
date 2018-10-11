@@ -38,7 +38,7 @@ class TeamPublicController extends BaseController
         })->paginate(12);
 
 
-        return $this->response->title(trans('team::team.names'))
+        return $this->response->setMetaTitle(trans('team::team.names'))
             ->view('team::public.team.index')
             ->data(compact('teams'))
             ->output();
@@ -60,7 +60,7 @@ class TeamPublicController extends BaseController
         })->paginate();
 
 
-        return $this->response->title(trans('team::team.names'))
+        return $this->response->setMetaTitle(trans('team::team.names'))
             ->view('team::public.team.index')
             ->data(compact('teams'))
             ->output();
@@ -80,7 +80,7 @@ class TeamPublicController extends BaseController
                          ->where('slug', $slug);
         })->first(['*']);
 
-        return $this->response->title($$team->name . trans('team::team.name'))
+        return $this->response->setMetaTitle($$team->name . trans('team::team.name'))
             ->view('team::public.team.show')
             ->data(compact('team'))
             ->output();

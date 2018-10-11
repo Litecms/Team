@@ -62,9 +62,21 @@ class TeamTableSeeder extends Seeder
             ],
 
             [
-                'parent_id'   => 3,
+                'parent_id'   => 4,
                 'key'         => null,
-                'url'         => 'team',
+                'url'         => 'teams',
+                'name'        => 'Team',
+                'description' => null,
+                'icon'        => null,
+                'target'      => null,
+                'order'       => 190,
+                'status'      => 1,
+            ],
+
+            [
+                'parent_id'   => 5,
+                'key'         => null,
+                'url'         => 'teams',
                 'name'        => 'Team',
                 'description' => null,
                 'icon'        => null,
