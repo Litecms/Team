@@ -1,10 +1,10 @@
-            @include('team::public.team.partial.header')
+            @include('team::team.partial.header')
 
             <section class="single">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3">
-                            @include('team::public.team.partial.aside')
+                            @include('team::team.partial.aside')
                         </div>
                         <div class="col-md-9 ">
                             <div class="area">

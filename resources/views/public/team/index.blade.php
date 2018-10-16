@@ -1,4 +1,4 @@
-            @include('team::public.team.partial.header')
+            @include('team::team.partial.header')
 
             <section class="grid bg-white">
                 <div class="container ">

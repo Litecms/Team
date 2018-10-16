@@ -39,7 +39,7 @@ class TeamPublicController extends BaseController
 
 
         return $this->response->setMetaTitle(trans('team::team.names'))
-            ->view('team::public.team.index')
+            ->view('team::team.index')
             ->data(compact('teams'))
             ->output();
     }
@@ -61,7 +61,7 @@ class TeamPublicController extends BaseController
 
 
         return $this->response->setMetaTitle(trans('team::team.names'))
-            ->view('team::public.team.index')
+            ->view('team::team.index')
             ->data(compact('teams'))
             ->output();
     }
@@ -81,7 +81,7 @@ class TeamPublicController extends BaseController
         })->first(['*']);
 
         return $this->response->setMetaTitle($$team->name . trans('team::team.name'))
-            ->view('team::public.team.show')
+            ->view('team::team.show')
             ->data(compact('team'))
             ->output();
     }
