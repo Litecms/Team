@@ -17,17 +17,11 @@
         <div class="nav-tabs-custom">
             <ul class="nav nav-tabs">
                     <li class="{!!(request('status') == '')?'active':'';!!}"><a href="{!!guard_url('team/team')!!}">{!! trans('team::team.names') !!}</a></li>
-                    <li class="{!!(request('status') == 'archive')?'active':'';!!}"><a href="{!!guard_url('team/team?status=archive')!!}">Archived</a></li>
-                    <li class="{!!(request('status') == 'deleted')?'active':'';!!}"><a href="{!!guard_url('team/team?status=deleted')!!}">Trashed</a></li>
                     <li class="pull-right">
                     <span class="actions">
-                    <!--   
-                    <a  class="btn btn-xs btn-purple"  href="{!!guard_url('team/team/reports')!!}"><i class="fa fa-bar-chart" aria-hidden="true"></i><span class="hidden-sm hidden-xs"> Reports</span></a>
-                    @include('team::admin.team.partial.actions')
-                    -->
                     @include('team::admin.team.partial.filter')
                     @include('team::admin.team.partial.column')
-                    </span> 
+                    </span>
                 </li>
             </ul>
             <div class="tab-content">
@@ -58,8 +52,8 @@ $(document).ready(function(){
             'render': function (data, type, full, meta){
                 return '<input type="checkbox" name="id[]" value="' + data.id + '">';
             }
-        }], 
-        
+        }],
+
         "responsive" : true,
         "order": [[1, 'asc']],
         "bProcessing": true,
@@ -103,7 +97,7 @@ $(document).ready(function(){
 
         aIds = [];
         $(".child").remove();
-        $(this).parent().parent().removeClass('parent'); 
+        $(this).parent().parent().removeClass('parent');
         $("input[name^='id[]']:checked").each(function(){
             aIds.push($(this).val());
         });
@@ -122,7 +116,7 @@ $(document).ready(function(){
         }else{
             $("input[name^='id[]']").prop('checked',false);
         }
-        
+
     });
 
 
@@ -142,7 +136,7 @@ $(document).ready(function(){
         e.preventDefault();
         var tr = $(this).closest('tr');
         var row = table.row( tr );
- 
+
         if ( row.child.isShown() ) {
             // This row is already open - close it
             row.child.hide();

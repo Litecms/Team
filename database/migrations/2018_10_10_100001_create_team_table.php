@@ -25,6 +25,7 @@ class CreateTeamTable extends Migration
             $table->string('description', 2555)->nullable();
             $table->text('image')->nullable();
             $table->text('link')->nullable();
+            $table->integer('order')->nullable();
             $table->string('slug', 2555)->nullable();
             $table->integer('user_id')->nullable();
             $table->text('user_type')->nullable();

@@ -15,7 +15,6 @@ class TeamTransformer extends TransformerAbstract
                 'public'    => $team->getPublicKey(),
                 'route'     => $team->getRouteKey(),
             ], 
-            'id'                => $team->id,
             'name'              => $team->name,
             'designation'       => $team->designation,
             'description'       => $team->description,

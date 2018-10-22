@@ -16,7 +16,7 @@ return [
      */
     'name'          => 'Team',
     'names'         => 'Teams',
-    
+
     /**
      * Singlular and plural name of the module
      */
@@ -32,7 +32,7 @@ return [
      * Options for select/radio/check.
      */
     'options'       => [
-            
+
     ],
 
     /**
@@ -45,6 +45,7 @@ return [
         'description'                => 'Please enter description',
         'image'                      => 'Please enter image',
         'link'                       => 'Please enter link',
+        'order'                      => 'Please enter Order',
         'user_id'                    => 'Please enter user id',
         'user_type'                  => 'Please enter user type',
         'created_at'                 => 'Please select created at',
@@ -62,6 +63,7 @@ return [
         'description'                => 'Description',
         'image'                      => 'Image',
         'link'                       => 'Link',
+        'order'                      => 'Order',
         'user_id'                    => 'User id',
         'user_type'                  => 'User type',
         'created_at'                 => 'Created at',
